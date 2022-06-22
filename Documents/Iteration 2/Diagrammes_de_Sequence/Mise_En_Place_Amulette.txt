@@ -1,0 +1,23 @@
+@startuml
+title Fonctionnalité "Mise en place de l'amulette"
+
+participant "jeu:Jeu" as jeu
+participant "laby:Labyrinthe" as laby
+participant "item:Item" as item
+participant "amu:Amulette" as amu
+
+jeu --> laby : placeItem()
+activate jeu
+activate laby
+laby --> amu : Amulette(x,y)
+activate amu
+amu --> item : super(x,y)
+activate item
+item --> amu
+deactivate item
+amu --> laby
+deactivate amu
+laby --> jeu
+deactivate laby
+deactivate jeu
+@enduml

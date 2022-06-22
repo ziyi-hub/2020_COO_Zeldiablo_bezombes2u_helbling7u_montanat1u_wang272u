@@ -1,0 +1,24 @@
+@startuml
+title Fonctionnalité "mort du héros"
+
+participant "monstre:Monstre" as monstre
+participant "jeu:Jeu" as jeu
+participant "heros:Heros" as heros
+
+monstre --> jeu : getHeros()
+activate monstre
+activate jeu
+monstre <-- jeu : Heros
+deactivate jeu
+monstre --> heros : subirDegats()
+activate heros
+group pv <=0
+heros --> jeu : mortPersonage(this)
+activate jeu
+jeu --> heros
+deactivate jeu
+end
+heros --> monstre
+deactivate heros
+deactivate monstre
+@enduml

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b70364a2-3ae4-452e-9c90-e4702aceb6b3" name="Default Changelist" comment="Iteration 1: Initial" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Antoine B &lt;17477476+warplextech@users.noreply.github.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1guQfZl3R38McRo4i0pmFt7sa8o" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15136719" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in zeldiablo">
+    <configuration name="DiablEngine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="diablengine.DiablEngine" />
+      <module name="zeldiablo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="diablengine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Zeldiablo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Zeldiablo" />
+      <module name="zeldiablo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in zeldiablo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zeldiablo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JeuTest.test_04_getRandomMonstre" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zeldiablo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JeuTest" />
+      <option name="METHOD_NAME" value="test_04_getRandomMonstre" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JeuTest.test_05_personnageMort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zeldiablo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JeuTest" />
+      <option name="METHOD_NAME" value="test_05_personnageMort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in zeldiablo" />
+        <item itemvalue="Application.Zeldiablo" />
+        <item itemvalue="Application.DiablEngine" />
+        <item itemvalue="JUnit.JeuTest.test_05_personnageMort" />
+        <item itemvalue="JUnit.JeuTest.test_04_getRandomMonstre" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b70364a2-3ae4-452e-9c90-e4702aceb6b3" name="Default Changelist" comment="" />
+      <created>1598962103974</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598962103974</updated>
+      <workItem from="1598962105111" duration="3051000" />
+      <workItem from="1598987054915" duration="5514000" />
+      <workItem from="1598993130000" duration="5242000" />
+      <workItem from="1599027350262" duration="4230000" />
+      <workItem from="1599032184958" duration="1859000" />
+      <workItem from="1599038014477" duration="2761000" />
+      <workItem from="1599049557516" duration="853000" />
+      <workItem from="1599076501697" duration="1547000" />
+      <workItem from="1599078068540" duration="1000" />
+      <workItem from="1599117335083" duration="9788000" />
+      <workItem from="1599132648873" duration="114000" />
+      <workItem from="1599132774747" duration="1406000" />
+      <workItem from="1599134903251" duration="4318000" />
+      <workItem from="1599139410624" duration="5000" />
+      <workItem from="1599139438550" duration="1535000" />
+    </task>
+    <task id="LOCAL-00001" summary="Iteration 1: Initial">
+      <created>1598964904085</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598964904085</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="Iteration 1: Initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Iteration 1: Initial" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="238" width="816" height="729" key="#Intentions" timestamp="1598992626495">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="552" y="238" width="816" height="729" key="#Intentions/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@0.0.1920.1160" timestamp="1598992626495" />
+    <state x="2472" y="221" key="#Plugins" timestamp="1599132912637">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state x="2472" y="221" key="#Plugins/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@1920.0.1920.1160" timestamp="1599132912637" />
+    <state x="249" y="0" key="#Project_Structure" timestamp="1599127708337">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1599127708337" />
+    <state x="74" y="65" width="1389" height="694" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1599127378117">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="74" y="65" width="1389" height="694" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1599127378117" />
+    <state x="92" y="92" width="1736" height="976" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@0.0.1920.1160" timestamp="1598994204198" />
+    <state x="612" y="188" key="#com.intellij.ide.util.MemberChooser" timestamp="1599137486932">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="612" y="188" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1599137486932" />
+    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599038894650" />
+    <state x="765" y="264" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@0.0.1920.1160" timestamp="1598992443826" />
+    <state x="743" y="445" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1598992741968">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="743" y="445" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@0.0.1920.1160" timestamp="1598992741968" />
+    <state x="707" y="289" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1598998308129">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="707" y="289" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@0.0.1920.1160" timestamp="1598998308129" />
+    <state x="152" y="0" key="CommitChangelistDialog2" timestamp="1599121784659">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="152" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599121784659" />
+    <state x="592" y="238" key="FileChooserDialogImpl" timestamp="1599050414947">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="592" y="238" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599050414947" />
+    <state x="740" y="335" key="FileChooserDialogImpl/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@0.0.1920.1160" timestamp="1598998104000" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1599199692854">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599199692854" />
+    <state width="1877" height="321" key="GridCell.Tab.0.bottom/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@0.0.1920.1160" timestamp="1599078049859" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1599199692854">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599199692854" />
+    <state width="1877" height="321" key="GridCell.Tab.0.center/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@0.0.1920.1160" timestamp="1599078049859" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1599199692854">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599199692854" />
+    <state width="1877" height="321" key="GridCell.Tab.0.left/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@0.0.1920.1160" timestamp="1599078049859" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1599199692854">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599199692854" />
+    <state width="1877" height="321" key="GridCell.Tab.0.right/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@0.0.1920.1160" timestamp="1599078049859" />
+    <state width="1877" height="396" key="GridCell.Tab.1.bottom" timestamp="1598998376215">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="396" key="GridCell.Tab.1.bottom/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@0.0.1920.1160" timestamp="1598998376215" />
+    <state width="1877" height="396" key="GridCell.Tab.1.center" timestamp="1598998376215">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="396" key="GridCell.Tab.1.center/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@0.0.1920.1160" timestamp="1598998376215" />
+    <state width="1877" height="396" key="GridCell.Tab.1.left" timestamp="1598998376215">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="396" key="GridCell.Tab.1.left/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@0.0.1920.1160" timestamp="1598998376215" />
+    <state width="1877" height="396" key="GridCell.Tab.1.right" timestamp="1598998376215">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="396" key="GridCell.Tab.1.right/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@0.0.1920.1160" timestamp="1598998376215" />
+    <state x="440" y="154" key="SettingsEditor" timestamp="1598992907497">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="440" y="154" key="SettingsEditor/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@0.0.1920.1160" timestamp="1598992907497" />
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1598964909681">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1598964909681" />
+    <state x="664" y="423" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1599038063007">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="531" y="335" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1599027375572" />
+    <state x="664" y="423" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1599038063007" />
+    <state x="664" y="472" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@0.0.1920.1160" timestamp="1598992246435" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599031716218">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1599031716218" />
+    <state x="733" y="459" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@0.0.1920.1160" timestamp="1598992225804" />
+    <state x="731" y="390" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1598992955643">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="731" y="390" key="com.intellij.testIntegration.createTest.CreateTestDialog/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@0.0.1920.1160" timestamp="1598992955643" />
+    <state x="381" y="338" width="1015" height="572" maximized="true" key="dock-window-1" timestamp="1599139643924">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="381" y="338" width="1015" height="572" maximized="true" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1599139643924" />
+    <state x="721" y="-18" width="1357" height="1147" maximized="true" key="dock-window-1/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@1920.0.1920.1160" timestamp="1599133811391" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1599139367407">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1599139367407" />
+    <state x="2543" y="255" width="840" height="679" key="search.everywhere.popup" timestamp="1599132850602">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state x="498" y="181" width="672" height="482" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599127529294" />
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@0.0.1920.1160" timestamp="1598998305322" />
+    <state x="2543" y="255" width="840" height="679" key="search.everywhere.popup/1920.0.1920.1160/0.0.1920.1160/1908.-1080.1920.1040@1920.0.1920.1160" timestamp="1599132850602" />
+  </component>
+</project>

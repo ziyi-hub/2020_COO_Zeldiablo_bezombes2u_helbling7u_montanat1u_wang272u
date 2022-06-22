@@ -1,0 +1,26 @@
+@startuml
+title Fonctionnalité "Attaque du joueur"
+
+participant "jeu:Jeu" as jeu
+participant "heros:Heros" as heros
+participant "monstre:Monstre" as monstre
+
+activate jeu
+--> jeu : keyPressed(KeyEvent e)
+alt keyPressed = KeyEvent.VK_SPACE
+jeu --> heros : attaquerAlentours()
+activate heros
+heros --> heros : getPersonnageAlentours()
+alt getPersonnageAlentours().isEmpty() return true
+heros --> heros : attaquerAlentours() return false
+heros --> jeu : droitdeJeu = false
+end
+heros --> monstre : subirDegats()
+activate monstre
+monstre --> heros
+monstre --> jeu
+deactivate monstre
+deactivate heros
+deactivate jeu
+end
+@enduml

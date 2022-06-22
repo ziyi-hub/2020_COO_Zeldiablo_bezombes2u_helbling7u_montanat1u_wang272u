@@ -1,0 +1,165 @@
+@startuml
+title Zeldiablo iteration 3 - 03/09/2020
+
+note "<color:#CD5C5C>■ </color> : modifications depuis l'itération 2" as N1
+
+package "jeu"{
+class Jeu{
++ Jeu()
+- genererMonstre(int) : void
++ getListeMonstres() : ArrayList<Personnage>
++ getHeros() : Heros
++ getLabyrinthe() : Labyrinthe
++ personnageMort(Personnage, int) : void
++ getRandomMonstre() : Personnage
+}
+
+class Labyrinthe{
+- taille : int
+- murs : boolean[][]
++ Labyrinthe()
++ getAccessible(int, int) : boolean
++ getNbCasesLibres() : int
++ getTaille() : int
++ <color:#CD5C5C>placerItems() : void</color>
++ <color:#CD5C5C>getItems() : ArrayList<Item></color>
++ <color:#CD5C5C>changeItemsListe(ArrayList<Item>) : void</color>
+
+}
+
+abstract class Personnage{
+- x : int
+- y : int
+- pv : int
++<color:#CD5C5C> attaqueAnim : boolean</color>
+- <color:#CD5C5C>pvMax : int</color>
++ Personnage(int, int, int, Jeu)
++ seDeplacer(int)
++ getPv() : int
++ getX() : int
++ getY() : int
++ getJeu() : Jeu
+<color:#CD5C5C>+ getPvMax() : int</color>
+{abstract} + lancerTour() : void
++ attaquer(Personnage) : boolean
++ subirDegats() : void
++ <color:#CD5C5C>getPersonnageAlentours() : ArrayList<Personnage></color>
++ <color:#CD5C5C>isTherePersonnage(Point) : boolean</color>
++ + <color:#CD5C5C>getAmulette() : boolean </color>
++ <color:#CD5C5C>setX(int) : void </color>
++ <color:#CD5C5C>setY(int) : void </color>
+}
+
+class Heros{
+- nom : String
+- <color:#CD5C5C> Amulette : boolean</color>
+- <color:#CD5C5C> Gagner : boolean</color>
+- <color:#CD5C5C>droitdeJeu : boolean</color>
++ <color:#CD5C5C>Heros(int, int, int, Jeu, String)</color>
++ getNom() : String
++ <color:#CD5C5C>attaquerAlentours() : boolean</color>
++ <color:#CD5C5C>isDroitdeJeu() : boolean</color>
++ <color:#CD5C5C>setDroitdeJeu() : void</color>
++ <color:#CD5C5C>getAmulette() : boolean </color>
++ <color:#CD5C5C>getGagner() : boolean </color>
+}
+
+class Monstre{
+<color:#CD5C5C>+ Monstre(int, int, Jeu)</color>
+}
+
+abstract class Item{
+- x : int
+- y : int
++ getX() : int
++ getY() : int
+<color:#CD5C5C>+ Item(int, int)</color>
+}
+
+class Amulette extends Item{
+<color:#CD5C5C>+ Amulette(int, int)</color>
+}
+
+}
+
+
+package diablengine{
+interface DEPluggable #CD5C5C{
++ init(DiablEngine) : void
++ fixedUpdate(int) : void
++ render (int, int) : jPanel
++ keyPressed(KeyEvent) : void
+}
+
+class DiablEngine #CD5C5C{
+{static} - renderZone : jPanel
+- mainFrame : jFrame
+- pluggedObject : DEPluggable
+- latestFrameNumber : int
+- worker : Timer
++ DiableEngine(DEPluggable)
++ initRender(Dimension) : void
++ run(int) : void
++ stop() : void
+{static}+ plugAndPlay(DEPluggable, Dimension, int) : DiablEngine
+{static}+ plugAndPlay(DEPluggable, Dimension, int, IMenu) : DiablEngine
+}
+
+class Prebuilt #CD5C5C{
+{static}+ drawLifeBarre(Graphics, int, int, int, int, int, int, int) : Graphics
+
+}
+
+class IMenu #CD5C5C{
++ displayMainMenu() : void
+
+}
+
+class staticSpritePalette #CD5C5C{
+{static} - palette : Map<String, BufferedImage>
+{static} + addToPalette(String, String, int, int, int, int) : void
+{static} + pickFromPalette(String) : BufferedImage 
+}
+
+}
+
+class Zeldiablo #CD5C5C{
+{static}+main(String[])
+- art_Planel() : JPanel
+- loadRessources() : void
+}
+
+Jeu "1" --> "1" Labyrinthe : -laby
+
+Jeu "1" --> "*" Personnage : -listeMonstres
+
+Jeu "1" --> "1" Personnage : -heros
+
+Jeu "1" <-- "1" Personnage : -jeu
+
+Personnage "1" --> "1" Labyrinthe : -laby
+
+Labyrinthe "1" --> "*" Item : -listeItems
+
+DiablEngine "1" --> "1" DEPluggable : -pluggedObject
+
+Jeu "1" --> "1" DiablEngine : -de
+
+Personnage <|.. Heros
+
+Personnage <|.. Monstre
+
+DEPluggable <|.. Jeu
+
+DiablEngine "1" <-- "1" Zeldiablo : de
+
+Prebuilt <.. Jeu
+
+Jeu <.. Zeldiablo
+
+IMenu <|.. Zeldiablo
+
+IMenu "0..1" <-- "1" DiablEngine : menu
+
+Item "*" <-- "1" Heros : listeItems
+@enduml

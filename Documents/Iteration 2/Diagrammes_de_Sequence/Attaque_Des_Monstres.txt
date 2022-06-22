@@ -1,0 +1,22 @@
+@startuml
+title Fonctionnalité "Attaque des monstres"
+
+participant "jeu:Jeu" as jeu
+participant "monstre:Monstre" as monstre
+participant "heros:Heros" as heros
+
+activate jeu
+loop i < listeMonstres.length
+jeu --> monstre : lancerTour(int direction)
+activate monstre
+monstre --> jeu : getHeros()
+jeu --> monstre : heros
+monstre --> heros : subirDegats()
+activate heros
+heros --> monstre
+monstre --> jeu
+end
+deactivate heros
+deactivate monstre
+deactivate jeu
+@enduml

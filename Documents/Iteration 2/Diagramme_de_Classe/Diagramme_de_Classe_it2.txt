@@ -1,0 +1,80 @@
+@startuml
+title Zeldiablo iteration 2 - 02/09/2020
+
+note "<color:#CD5C5C>■ </color> : modifications depuis l'itération 1" as N1
+
+class Jeu{
++ Jeu()
+- genererMonstre(int) : void
++ main(String[])
++ getListeMonstres() : ArrayList<Personnage>
++ getHeros() : Heros
++ getLabyrinthe() : Labyrinthe
++<color:#CD5C5C>personnageMort(Personnage perso, int index) : void</color>
++<color:#CD5C5C>getRandomMonstre() : Personnage</color>
+}
+
+class Labyrinthe{
+- taille : int
+- murs : boolean[][]
++ Labyrinthe()
++ getAccessible(int x, int y) : boolean
++ getNbCasesLibres() : int
++ getTaille() : int
+}
+
+abstract class Personnage{
+- x : int
+- y : int
+- pv : int
+- j : Jeu
++ Personnage(int, int, int, Labyrinthe)
+seDeplacer(int direction)
++ getPv() : int
++ getX() : int
++ getY() : int
++ <color:#CD5C5C>getJeu() : Jeu</color>
++ getY() : int
++ <color:#CD5C5C>lancerTour() : void</color>
++ attaquer(Personnage cible) : boolean
++ <color:#CD5C5C>subirDegats() : void</color>
+}
+
+
+class Heros{
+- nom : String
++ Heros(int, int, int, Labyrinthe, String)
++ getNom() : String
+}
+
+class Monstre{
++ Monstre(int, int, int, Labyrinthe)
+}
+
+abstract class Item #CD5C5C{
+- x : int
+- y : int
++ getX() : int
++ getY() : int
+}
+
+class Amulette #CD5C5C{
+}
+
+
+Jeu "1" --> "1" Labyrinthe : -laby
+
+Jeu "1" --> "*" Personnage : -listeMonstres
+
+Jeu "1" --> "1" Personnage : -heros
+
+Personnage "1" --> "1" Labyrinthe : -laby
+
+Labyrinthe "1" --> "*" Item : -listeItems
+
+Personnage <|.. Heros
+
+Personnage <|.. Monstre
+
+Item <|.. Amulette
+@enduml

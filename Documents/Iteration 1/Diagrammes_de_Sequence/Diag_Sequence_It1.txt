@@ -1,0 +1,27 @@
+@startuml
+title Diagramme de séquence - itération 1
+
+participant "jeu:Jeu" as jeu
+participant "laby:Labyrinthe" as laby
+participant "monstre:Monstre" as monstre
+participant "heros:Heros" as heros
+
+activate jeu
+jeu -> laby : Labyrinthe()
+activate laby
+
+loop indice i
+laby -> monstre : Monstre()
+activate monstre
+laby <-- monstre : monstre
+deactivate monstre
+end
+
+laby -> heros : Heros()
+activate heros
+laby <-- heros : heros
+deactivate heros
+jeu <-- laby : laby
+deactivate laby
+deactivate jeu
+@enduml

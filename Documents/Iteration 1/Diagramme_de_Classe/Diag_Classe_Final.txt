@@ -1,0 +1,58 @@
+@startuml
+title Zeldiablo iteration 1 (fin avant iteration 2) - 02/09/2020
+
+class Jeu{
+- listeMonstres : ArrayList<Monstre>
++ Jeu()
+- genererMonstre(int) : void
++ main(String[])
++ getListeMonstres() : ArrayList<Monstre>
++ getHeros() : Heros
++ getLaby() : Labyrinthe
+}
+
+class Labyrinthe{
+- taille : int
+- murs : boolean[][]
++ Labyrinthe()
++ getAccessible(int x, int y) : boolean
++ getNbCasesLibres() : int
++ getTaille() : int
+}
+
+abstract class Personnage{
+- x : int
+- y : int
+- pv : int
+- laby : Labyrinthe
++ Personnage(int, int, int, Labyrinthe)
+{abstract} seDeplacer(int direction)
++ getPv() : int
++ getX() : int
++ getY() : int
++ getLabyrinthe() : Labyrinthe
+}
+
+class Heros{
+- nom : String
++ Heros(int, int, int, Labyrinthe, String)
++ getNom() : String
+}
+
+class Monstre{
++ Monstre(int, int, int, Labyrinthe)
+}
+
+
+Jeu "1" --> "1" Labyrinthe : -laby
+
+Jeu "1" --> "*" Personnage : -listeMonstres
+
+Jeu "1" --> "1" Personnage : -heros
+
+Personnage "1" --> "1" Labyrinthe : -laby
+
+Personnage <|.. Heros
+
+Personnage <|.. Monstre
+@enduml
